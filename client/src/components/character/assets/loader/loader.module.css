@@ -1,0 +1,10 @@
+.wrapper img {
+    display: flex;
+    margin: auto;
+    padding-top: 80px;
+    
+}
+.wrapper {
+    background-color: #2E3644;
+    height: 500px;
+}

@@ -1,0 +1,7 @@
+.wrapper {
+    display: flex;
+    margin-top: auto;
+    padding: 10px;
+    justify-content: space-between;
+    background: #6284B2;
+}

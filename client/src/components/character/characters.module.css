@@ -1,0 +1,25 @@
+.wrapper:hover {
+    transition: all 1s ease-out;
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+a {
+    text-decoration: none
+}
+
+.Card:hover {
+    border: 1px solid black;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.warningWrapper {
+    text-align: right;
+}

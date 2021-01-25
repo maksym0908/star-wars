@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input[type="file"] {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+}
+
+
+label {
+    margin-top: 10px;
+    display: inline-block;
+    color: #3f51b5;
+    border: 1px solid rgba(63, 81, 181, 0.5);
+    width: 100%!important;
+    text-align: center;
+    padding: 5px 0px 7px 0px;
+    border-radius: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+.like, .dislike, .uploadImage {
+    background: #F9FCFF;
+}
+.like:active {
+    background: #7ba3d8;
+}
+
+.dislike:active {
+    background: #B9554F;
+}
+.container .avatar img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.wrapper {
+    width: 400px;
+    line-height: 25px;
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.wrapper p {
+    margin: 0px;
+}
+
+.wrapper .fieldName {
+    font-weight: 300;
+}
+
+ .grid {
+    display: grid;
+    grid-template-columns: 100px auto;
+    
+}
+
+.wrapper .name h2 {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 98%;
+}
+
+.avatar img {
+    width: 300px;
+    height: 250px;
+}
