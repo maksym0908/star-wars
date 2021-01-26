@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Characters } from '../components/character/characters'
 import { handleSignIn } from '../api/swCharactersApi'

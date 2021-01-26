@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { getAllData } from '../api/swCharactersApi'
 import App from '../App'

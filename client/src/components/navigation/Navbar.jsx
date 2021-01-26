@@ -1,10 +1,9 @@
 import { Button, Input } from '@material-ui/core'
-import React from 'react'
 import { useHistory } from 'react-router-dom'
 import classes from './Navbar.module.css'
 
 export const Navbar = ({ filterCharacters, userInfo, lengthOfCharacter, handleSignOut }) => {
-    const characterPage = useHistory().location.pathname.includes('character')
+    const page = useHistory().location.pathname
     const styles = {
         image: {
             width: 40, 
@@ -49,7 +48,7 @@ export const Navbar = ({ filterCharacters, userInfo, lengthOfCharacter, handleSi
 
             <div style={styles.navbar}>
                 <div style={{marginRight: 40}}>
-                {!characterPage && <Input onChange={e => filterCharacters(e.target.value)} placeholder="Put in a name of a character you're looking for..." style={styles.input} />}
+                {page === '/' && <Input onChange={e => filterCharacters(e.target.value)} placeholder="Put in a name of a character you're looking for..." style={styles.input} /> }
                 </div>
                 {!userInfo ? <Button style={styles.button} href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86sgsm7k4ak7ov&redirect_uri=http://localhost:3000&state=f123467876&scope=r_liteprofile%20r_emailaddress%20">Sign-in</Button>
                 : <>  

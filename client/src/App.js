@@ -1,4 +1,3 @@
-import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Navbar } from './components/navigation/Navbar';
 import { SavedItems } from './components/saved_items/savedItems';

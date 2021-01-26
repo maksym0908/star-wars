@@ -1,5 +1,4 @@
 import { Card } from '@material-ui/core'
-import React from 'react'
 import { Warning } from '../navigation/warning/warning'
 import classes from './characters.module.css'
 

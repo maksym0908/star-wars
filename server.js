@@ -14,20 +14,19 @@ function requerAccessToken(code) {
     .send(`client_secret=TTAExvp5Jc0wSpJz`)
     .send(`code=${code}`)
     .send(`state=123456`)
-}
+} 
 
 
 
-app.post('/', jsonParser, (req, res, next) => {
+app.post('/', jsonParser, (req, res) => {
     requerAccessToken(req.body.token).then(data => res.send(data.text)).catch(err => res.send(err))
-    next()
+
 })
 
-app.post('/user', jsonParser, (req, res, next) => {
+app.post('/user', jsonParser, (req, res) => {
      request.get(`https://api.linkedin.com/v2/me?`).set({"Authorization": `Bearer ${req.body.accessToken}`, "content-type": "application/json"}).then(data => res.send(data.text)).catch(err => res.send(err))
-     next()
 })
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`)
-})
+}) 

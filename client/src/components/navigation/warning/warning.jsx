@@ -1,4 +1,3 @@
-import React from 'react'
 import classes from './warning.module.css'
 
 export const Warning = () => {
